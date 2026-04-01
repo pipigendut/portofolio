@@ -8,16 +8,16 @@ import { Badge } from "@/components/ui/badge";
 export default function Skills() {
   const skillCategories = [
     {
-      title: "Frontend",
-      icon: Layout,
-      skills: skills.frontend,
-      color: "from-blue-500/20 to-cyan-500/20"
-    },
-    {
       title: "Backend",
       icon: Code,
       skills: skills.backend,
       color: "from-green-500/20 to-emerald-500/20"
+    },
+    {
+      title: "Frontend",
+      icon: Layout,
+      skills: skills.frontend,
+      color: "from-blue-500/20 to-cyan-500/20"
     },
     {
       title: "Database",
@@ -29,7 +29,7 @@ export default function Skills() {
       title: "Tools & Infrastructure",
       icon: Wrench,
       skills: skills.tools,
-      color: "from-purple-500/20 to-pink-500/20"
+      color: "from-slate-500/20 to-gray-500/20"
     },
     {
       title: "Architecture",

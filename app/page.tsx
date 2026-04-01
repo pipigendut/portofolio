@@ -1,14 +1,23 @@
+import Navigation from "@/components/Navigation";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Experience from "@/components/Experience";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+
 export default function Home() {
   return (
-    <div
-      style={{
-        maxWidth: 1280,
-        margin: '0 auto',
-        padding: '2rem',
-        textAlign: 'center',
-      }}
-    >
-      Start prompting.
-    </div>
+    <main className="min-h-screen bg-background">
+      <Navigation />
+      <Hero />
+      <About />
+      <Skills />
+      <Experience />
+      <Projects />
+      <Contact />
+      <Footer />
+    </main>
   );
 }

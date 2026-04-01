@@ -16,12 +16,6 @@ export default function Hero() {
 
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
-          <div className="inline-block">
-            <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center text-6xl font-bold">
-              {personalInfo.name.split(' ').map(n => n[0]).join('')}
-            </div>
-          </div>
-
           <div className="space-y-4">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60">
               {personalInfo.name}
@@ -47,10 +41,10 @@ export default function Hero() {
             <Button
               size="lg"
               variant="outline"
-              onClick={() => scrollToSection('projects')}
+              onClick={() => scrollToSection('about')}
               className="group"
             >
-              View Projects
+              View About
               <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
             </Button>
           </div>

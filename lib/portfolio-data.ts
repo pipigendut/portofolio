@@ -4,8 +4,8 @@ export const personalInfo = {
   location: "Bekasi, Indonesia",
   email: "akbar.maulana090895@gmail.com",
   phone: "0813 8670 1218",
-  github: "akabarem",
-  linkedin: "pipigendut",
+  github: "pipigendut",
+  linkedin: "akabarem",
   website: "pipigendut.space",
   summary: "Fullstack Developer with 7+ years of experience specializing in scalable web systems, backend services, and API-driven architectures. Experienced in frontend development, deployment pipelines, and maintaining high-traffic production systems. Comfortable working independently or as part of a collaborative engineering team."
 };
@@ -60,10 +60,13 @@ export const projects = [
       "Golang Gin",
       "React Native",
       "PostgreSQL",
-      "WebSocket",
+      "Gorilla WebSocket",
+      "SocketIO",
       "AWS EC2",
       "Docker",
       "Redis",
+      "FCM",
+      "Oracle Storage",
       "FCM"
     ],
     features: [
@@ -77,37 +80,128 @@ export const projects = [
       "Image upload & GIF messaging",
       "Background jobs using Asynq"
     ],
-    deployment: "AWS EC2 with Docker"
+    deployment: "AWS EC2 with Docker",
+    images: [
+      "https://lh3.googleusercontent.com/d/1tTzA3iriBAg0RyNRLNi69D-OPJ-rG8tK",
+      "https://lh3.googleusercontent.com/d/1m144PT_w2t6KwYzJdH-N8W-HCo76nX4p",
+      "https://lh3.googleusercontent.com/d/1ZZKoqxUEHqvZHGIeE_2ZIX2HZXEYf9ej",
+      "https://lh3.googleusercontent.com/d/1m1CUvB_1SLxWfZwjrU-Db5rbWeqZ8-4m"
+    ],
+    link: "https://example.com/swipee"
   },
   {
     id: 2,
     title: "JIFF - E-commerce Platform",
-    featured: true,
+    featured: false,
     description: "Full-featured e-commerce platform for customers and delivery agents",
     longDescription: "Led the development of a scalable e-commerce platform built with Ruby on Rails, featuring real-time tracking and integrated payment processing.",
     techStack: [
       "Ruby on Rails",
-      "React",
+      "Stimulus JS",
       "PostgreSQL",
       "Stripe",
       "WebSocket",
-      "Redis"
+      "ActionCable",
+      "Redis",
+      "Shrine",
+      "Devise",
+      "Pundit",
+      "Sidekiq",
+      "Ransack",
+      "Rubocop",
+      "aasm",
+      "Capistrano"
     ],
     features: [
       "Real-time delivery tracking with agent location monitoring",
+      "Integration with Fonzel Smart Lockers",
       "In-app chat system for customer-agent communication",
       "Stripe payment gateway integration",
       "Secure transaction processing with webhook handling",
       "RESTful API architecture",
-      "Scalable database design"
+      "Design Architecture & database design"
     ],
-    deployment: "Production deployment for PT. VirtualSpirit"
+    deployment: "",
+    images: [
+      "https://lh3.googleusercontent.com/d/14r96_qDZwFhNkzxfiZWaInrwly6juZWp",
+      "https://lh3.googleusercontent.com/d/1E0u9ysqzq0sZjV6oT9ldYVB_1C1-FiwK",
+      "https://lh3.googleusercontent.com/d/17ZvFReM9411OD6kbL1Dnk5DB3mp0TCZb",
+      "https://lh3.googleusercontent.com/d/1YQTY5qM0duudSqx-13IXHLGmRII5fygu"
+    ],
+    link: "https://www.jiff.com.my/index.html",
+    experienceId: 1
   },
   {
     id: 3,
+    title: "DR.KO",
+    featured: false,
+    description: "Developed and maintained a hospital management system using Ruby on Rails",
+    longDescription: "Developed and maintained a hospital management system using Ruby on Rails.",
+    techStack: [
+      "Ruby on Rails",
+      "Stimulus JS",
+      "PostgreSQL",
+      "Redis",
+      "Shrine",
+      "Devise",
+      "Pundit",
+      "Sidekiq",
+      "Ransack",
+      "Rubocop",
+      "aasm",
+      "Capistrano"
+    ],
+    features: [
+      "Investigated and resolved duplicate payment issues affecting transaction accuracy",
+      "Improved payment processing logic to prevent race conditions and duplicate records"
+    ],
+    deployment: "",
+    images: [
+      "https://lh3.googleusercontent.com/d/13hT9ebDlygIrN_K84OKOffSlSLS_uaRq",
+      "https://lh3.googleusercontent.com/d/1UL-NG1AZLW8l9JkZib8Zib0yJIH8FVrO"
+    ],
+    link: "https://app.koskinspecialist.com",
+    experienceId: 1
+  },
+  {
+    id: 4,
+    title: "Ninjasuite - SaaS Platform",
+    featured: false,
+    description: "Full-featured SaaS platform for customers and delivery agents",
+    longDescription: "Developed and maintained features for a SaaS platform, focusing on scalability and usability",
+    techStack: [
+      "Ruby on Rails",
+      "Stimulus JS",
+      "PostgreSQL",
+      "Redis",
+      "Shrine",
+      "Devise",
+      "Pundit",
+      "Sidekiq",
+      "Ransack",
+      "Rubocop",
+      "aasm",
+      "Capistrano"
+    ],
+    features: [
+      "Implemented a user scheduling system to automate task execution and improve workflow efficiency",
+      "Designed and built backend logic to handle scheduling rules, timing, and job execution"
+    ],
+    deployment: "",
+    images: [
+      "https://lh3.googleusercontent.com/d/1LzbNAI5bf40cR4LJrS9pa2ILSamC0FIF",
+      "https://lh3.googleusercontent.com/d/1c12dqiHFixX5J8afrQj-I6NVTKdwuZyj",
+      "https://lh3.googleusercontent.com/d/1SkmYUelS6AqpWXtzHPWO-BSSQiJNtf0a"
+    ],
+    link: "https://ninjasuites.ai/",
+    experienceId: 1
+  },
+  {
+    id: 5,
     title: "Isafe Sumatera - HSE Application",
     featured: false,
     description: "Health, Safety, and Environment management application",
+    longDescription: "Mobile application for managing Health, Safety, and Environment compliance in industrial settings with offline capabilities.",
     techStack: [
       "Java Spring Boot",
       "Ionic React",
@@ -119,14 +213,22 @@ export const projects = [
       "Firebase Cloud Messaging for notifications",
       "Crashlytics integration for error tracking",
       "Offline mode with SQLite and background sync",
-      "Play Store deployment"
-    ]
+      "Built and Release on Play Store"
+    ],
+    images: [
+      "https://lh3.googleusercontent.com/d/19PcMBwhKOmNgL58TfskgwBharOJDlWrv",
+      "https://lh3.googleusercontent.com/d/16VtBmkaKTei2zP_FjICTnX6vWBMZ7bOF",
+      "https://lh3.googleusercontent.com/d/1j_wUjHyCl7W4pikYxOK-TCfax9eKjRRb",
+      "https://lh3.googleusercontent.com/d/1517KgJr2GNtA709WRh8wGScWa68YSmCb"
+    ],
+    link: "https://play.google.com/store/apps/details?id=com.goldenenergymines.dots"
   },
   {
-    id: 4,
+    id: 6,
     title: "Fams Sumatera - Administration App",
     featured: false,
     description: "Enterprise administration and management system",
+    longDescription: "Comprehensive administration system for managing enterprise workflows and operations.",
     techStack: [
       "Java Spring Boot",
       "VueJS"
@@ -135,13 +237,19 @@ export const projects = [
       "Backend services with Spring Boot",
       "Modern dashboard with VueJS",
       "Administration workflow management"
-    ]
+    ],
+    images: [
+      "https://lh3.googleusercontent.com/d/1ekWmYJ1f9qAaTVgZFkejOXujOKHbbFLi",
+      "https://lh3.googleusercontent.com/d/1m3_iqokx2E7QHo6jaex8fxMSIEAJyH0b"
+    ],
+    link: "https://fams.borneo-indobara.com"
   },
   {
-    id: 5,
+    id: 7,
     title: "Virtual Booth Application",
     featured: false,
     description: "Interactive virtual booth platform with chat capabilities",
+    longDescription: "Virtual event platform enabling interactive booths and real-time communication for online exhibitions.",
     techStack: [
       "React JS",
       "Sendbird"
@@ -150,7 +258,77 @@ export const projects = [
       "Back office dashboard",
       "Real-time chat with Sendbird integration",
       "Virtual event management"
-    ]
+    ],
+    images: [],
+    link: ""
+  },
+  {
+    id: 9,
+    title: "Alodokter",
+    featured: false,
+    description: "Health, Safety, and Environment management application",
+    longDescription: "Leading digital health ecosystem in Southeast Asia, providing accessible healthcare services through technology.",
+    techStack: [
+      "Ruby",
+      "Python",
+      "MongoDB",
+      "Redis",
+      "Sidekiq",
+      "Firebase",
+      "JWT",
+      "OAuth 2.0",
+      "RESTful API",
+      "Microservices",
+      "Test-Driven Development (TDD)",
+      "CI/CD Pipelines"
+    ],
+    features: [
+      "Provide ERD, flow diagram, technical and deployment documentation.",
+      "Payment Service: Integrated third-party payment gateways such as Midtrans, OVO and Doku for payment processing.",
+      "User and Common Service: Designed and implemented authentication and authorization service using JWT tokens and OAuth.",
+      "EMR Service: Managed real-time electronic medical records using Pub/Sub for efficient data handling.",
+      "KYC Service: Integrated third-party identity verification providers such as VIDA to streamline the KYC process.",
+      "Insurance Service: Integrated third-party insurance provider such as Admedika and Fullerton for claim processing.",
+      "Provide technical support and troubleshooting for production issues.",
+      "Implement unit and integration testing using Rspec.",
+      "Develop Chatbot using Probability Tree Diagram Method."
+    ],
+    images: [
+      "https://lh3.googleusercontent.com/d/1GiyDhHR78V8iCunWtpWoIrglKJHs3eTv",
+      "https://lh3.googleusercontent.com/d/1iQbYnjdrvt7PslWkZRUhPzlPiVYhEuxD",
+      "https://lh3.googleusercontent.com/d/1YmSv26mfECdRUXNt5x3b9hxraprkAt8P"
+    ],
+    link: "https://www.alodokter.com/",
+    experienceId: 2
+  },
+  {
+    id: 9,
+    title: "POS - Kimia Farma",
+    featured: false,
+    description: "Point of Sales for Kimia Farma",
+    longDescription: "Developed and maintained a Point of Sale (POS) system used across outlets nationwide",
+    techStack: [
+      "Ruby",
+      "ReactJS",
+      "Python",
+      "PostgreSQL",
+      "Redis",
+      "Sidekiq",
+      "Firebase",
+      "RESTful API"
+    ],
+    features: [
+      "Implemented and improved stock opname (inventory reconciliation) processes to ensure stock accuracy.",
+      "Built features for inter-warehouse transactions across provinces for large-scale inventory distribution.",
+      "Fixed bugs and enhanced system stability across sales and inventory modules.",
+      "Developed automated reports (daily, monthly, yearly) in PDF format.",
+      "Optimized database queries and implemented caching strategies to improve system performance."
+    ],
+    images: [
+      "https://lh3.googleusercontent.com/d/1IsKDVkqmEVWvqjGmgx0-WW51hR-R3uz0"
+    ],
+    link: "https://pos.kimiafarma.co.id/",
+    experienceId: 3
   }
 ];
 
