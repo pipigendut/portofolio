@@ -49,8 +49,7 @@ export default function About() {
                   </div>
                   <ul className="space-y-2">
                     {certificates.map((cert, index) => (
-                      <li key={index} className="flex items-start gap-2">
-                        <span className="text-primary mt-1">•</span>
+                      <li key={index} className="flex items-center gap-2">
                         <span className="text-sm text-muted-foreground">{cert}</span>
                       </li>
                     ))}

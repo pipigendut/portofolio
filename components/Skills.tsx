@@ -46,9 +46,6 @@ export default function Skills() {
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold">Skills & Technologies</h2>
             <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              A comprehensive toolkit built over 7+ years of professional development experience
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

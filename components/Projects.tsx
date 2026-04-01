@@ -28,9 +28,6 @@ export default function Projects() {
             <div className="text-center space-y-4">
               <h2 className="text-3xl md:text-4xl font-bold">Featured Projects</h2>
               <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Showcasing scalable applications built with modern technologies
-              </p>
             </div>
 
             <div className="space-y-8">

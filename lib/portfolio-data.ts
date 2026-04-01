@@ -121,7 +121,7 @@ export const projects = [
       "RESTful API architecture",
       "Design Architecture & database design"
     ],
-    deployment: "",
+    deployment: "CI/CD Github Action",
     images: [
       "https://lh3.googleusercontent.com/d/14r96_qDZwFhNkzxfiZWaInrwly6juZWp",
       "https://lh3.googleusercontent.com/d/1E0u9ysqzq0sZjV6oT9ldYVB_1C1-FiwK",
@@ -155,7 +155,7 @@ export const projects = [
       "Investigated and resolved duplicate payment issues affecting transaction accuracy",
       "Improved payment processing logic to prevent race conditions and duplicate records"
     ],
-    deployment: "",
+    deployment: "Capistrano",
     images: [
       "https://lh3.googleusercontent.com/d/13hT9ebDlygIrN_K84OKOffSlSLS_uaRq",
       "https://lh3.googleusercontent.com/d/1UL-NG1AZLW8l9JkZib8Zib0yJIH8FVrO"
@@ -187,7 +187,7 @@ export const projects = [
       "Implemented a user scheduling system to automate task execution and improve workflow efficiency",
       "Designed and built backend logic to handle scheduling rules, timing, and job execution"
     ],
-    deployment: "",
+    deployment: "Capistrano",
     images: [
       "https://lh3.googleusercontent.com/d/1LzbNAI5bf40cR4LJrS9pa2ILSamC0FIF",
       "https://lh3.googleusercontent.com/d/1c12dqiHFixX5J8afrQj-I6NVTKdwuZyj",
@@ -215,6 +215,7 @@ export const projects = [
       "Offline mode with SQLite and background sync",
       "Built and Release on Play Store"
     ],
+    deployment: "Google Play Store",
     images: [
       "https://lh3.googleusercontent.com/d/19PcMBwhKOmNgL58TfskgwBharOJDlWrv",
       "https://lh3.googleusercontent.com/d/16VtBmkaKTei2zP_FjICTnX6vWBMZ7bOF",
@@ -238,6 +239,7 @@ export const projects = [
       "Modern dashboard with VueJS",
       "Administration workflow management"
     ],
+    deployment: "CI/CD Jenkins",
     images: [
       "https://lh3.googleusercontent.com/d/1ekWmYJ1f9qAaTVgZFkejOXujOKHbbFLi",
       "https://lh3.googleusercontent.com/d/1m3_iqokx2E7QHo6jaex8fxMSIEAJyH0b"
@@ -259,6 +261,7 @@ export const projects = [
       "Real-time chat with Sendbird integration",
       "Virtual event management"
     ],
+    deployment: "CI/CD Jenkins",
     images: [],
     link: ""
   },
@@ -293,6 +296,7 @@ export const projects = [
       "Implement unit and integration testing using Rspec.",
       "Develop Chatbot using Probability Tree Diagram Method."
     ],
+    deployment: "CI/CD GCP",
     images: [
       "https://lh3.googleusercontent.com/d/1GiyDhHR78V8iCunWtpWoIrglKJHs3eTv",
       "https://lh3.googleusercontent.com/d/1iQbYnjdrvt7PslWkZRUhPzlPiVYhEuxD",
@@ -324,6 +328,7 @@ export const projects = [
       "Developed automated reports (daily, monthly, yearly) in PDF format.",
       "Optimized database queries and implemented caching strategies to improve system performance."
     ],
+    deployment: "CI/CD Jenkins",
     images: [
       "https://lh3.googleusercontent.com/d/1IsKDVkqmEVWvqjGmgx0-WW51hR-R3uz0"
     ],
