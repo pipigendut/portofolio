@@ -5,21 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Code as Code2, Rocket, CircleCheck as CheckCircle2, Smartphone, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Project } from "@/lib/portfolio-data";
 
-interface Project {
-  id: number;
-  title: string;
-  description: string;
-  longDescription?: string;
-  techStack: string[];
-  features?: string[];
-  deployment?: string;
-  images?: string[];
-  linkWeb?: string;
-  linkApps?: string;
-  linkProject?: string;
-  experienceId?: number;
-}
 
 interface ProjectDetailDialogProps {
   project: Project | null;

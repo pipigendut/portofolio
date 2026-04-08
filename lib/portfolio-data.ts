@@ -51,7 +51,23 @@ export const skills = {
   ]
 };
 
-export const projects = [
+export interface Project {
+  id: number;
+  title: string;
+  featured: boolean;
+  description: string;
+  longDescription?: string;
+  techStack: string[];
+  features?: string[];
+  deployment?: string;
+  images?: string[];
+  linkWeb?: string;
+  linkApps?: string;
+  linkProject?: string;
+  experienceId?: number;
+}
+
+export const projects: Project[] = [
   {
     id: 1,
     title: "Swipee - Dating App",
