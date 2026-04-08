@@ -106,7 +106,8 @@ export const projects: Project[] = [
       "https://lh3.googleusercontent.com/d/1m1CUvB_1SLxWfZwjrU-Db5rbWeqZ8-4m"
     ],
     linkWeb: "https://api.swipee.pipigendut.space/swagger/index.html",
-    linkApps: "https://drive.google.com/file/d/1BpWxB5CCrlKRWmmyWJ8SIXTlYNmTssPP/view?usp=sharing"
+    linkApps: "https://drive.google.com/file/d/1BpWxB5CCrlKRWmmyWJ8SIXTlYNmTssPP/view?usp=sharing",
+    linkProject: "https://github.com/pipigendut/dating-backend"
   },
   {
     id: 2,
