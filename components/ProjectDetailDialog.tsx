@@ -2,7 +2,7 @@
 
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Code as Code2, Rocket, CircleCheck as CheckCircle2 } from "lucide-react";
+import { ExternalLink, Code as Code2, Rocket, CircleCheck as CheckCircle2, Smartphone, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
@@ -15,7 +15,9 @@ interface Project {
   features?: string[];
   deployment?: string;
   images?: string[];
-  link?: string;
+  linkWeb?: string;
+  linkApps?: string;
+  linkProject?: string;
   experienceId?: number;
 }
 
@@ -116,14 +118,32 @@ export default function ProjectDetailDialog({ project, open, onOpenChange }: Pro
             </div>
           )}
 
-          {project.link && (
-            <div className="flex justify-end pt-4">
-              <Button asChild>
-                <a href={project.link} target="_blank" rel="noopener noreferrer">
-                  View Project
-                  <ExternalLink className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
+          {(project.linkWeb || project.linkApps || project.linkProject) && (
+            <div className="flex flex-wrap justify-end gap-3 pt-6 border-t border-border/50">
+              {project.linkWeb && (
+                <Button asChild variant="outline" size="sm" className="border-primary/30 hover:border-primary/50">
+                  <a href={project.linkWeb} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    Website
+                  </a>
+                </Button>
+              )}
+              {project.linkApps && (
+                <Button asChild variant="outline" size="sm" className="border-primary/30 hover:border-primary/50">
+                  <a href={project.linkApps} target="_blank" rel="noopener noreferrer">
+                    <Smartphone className="mr-2 h-4 w-4" />
+                    Apps
+                  </a>
+                </Button>
+              )}
+              {project.linkProject && (
+                <Button asChild variant="outline" size="sm" className="border-primary/30 hover:border-primary/50">
+                  <a href={project.linkProject} target="_blank" rel="noopener noreferrer">
+                    <Github className="mr-2 h-4 w-4" />
+                    Repository
+                  </a>
+                </Button>
+              )}
             </div>
           )}
         </div>

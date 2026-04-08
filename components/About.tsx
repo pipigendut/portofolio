@@ -16,7 +16,7 @@ export default function About() {
             <Card className="border-primary/20 bg-card/50 backdrop-blur">
               <CardContent className="p-6 md:p-8">
                 <p className="text-lg leading-relaxed text-muted-foreground">
-                  {personalInfo.summary}
+                  {personalInfo.about}
                 </p>
               </CardContent>
             </Card>

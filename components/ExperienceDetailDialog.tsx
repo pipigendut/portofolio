@@ -2,7 +2,7 @@
 
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
-import { Briefcase, ExternalLink, ChevronDown, ChevronUp } from "lucide-react";
+import { Briefcase, ExternalLink, ChevronDown, ChevronUp, Smartphone, Github } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
@@ -117,9 +117,9 @@ export default function ExperienceDetailDialog({ experience, open, onOpenChange 
 
                       {project.features && project.features.length > 0 && (
                         <div className="pt-2">
-                          <Button 
-                            variant="ghost" 
-                            size="sm" 
+                          <Button
+                            variant="ghost"
+                            size="sm"
                             className="p-0 h-auto font-medium text-foreground hover:bg-transparent"
                             onClick={() => toggleFeatures(project.id)}
                           >
@@ -130,7 +130,7 @@ export default function ExperienceDetailDialog({ experience, open, onOpenChange 
                               <ChevronDown className="ml-1 h-3 w-3" />
                             )}
                           </Button>
-                          
+
                           {expandedProjects.includes(project.id) && (
                             <ul className="space-y-1.5 pt-3">
                               {project.features.map((feature, idx) => (
@@ -144,13 +144,33 @@ export default function ExperienceDetailDialog({ experience, open, onOpenChange 
                         </div>
                       )}
 
-                      {project.link && (
-                        <Button size="sm" variant="outline" asChild className="w-full">
-                          <a href={project.link} target="_blank" rel="noopener noreferrer">
-                            View Project
-                            <ExternalLink className="ml-2 h-3 w-3" />
-                          </a>
-                        </Button>
+                      {(project.linkWeb || project.linkApps || project.linkProject) && (
+                        <div className="flex flex-col gap-2 pt-2">
+                          {project.linkWeb && (
+                            <Button size="sm" variant="outline" asChild className="w-full border-primary/30">
+                              <a href={project.linkWeb} target="_blank" rel="noopener noreferrer">
+                                <ExternalLink className="mr-2 h-3 w-3" />
+                                Website
+                              </a>
+                            </Button>
+                          )}
+                          {project.linkApps && (
+                            <Button size="sm" variant="outline" asChild className="w-full border-primary/30">
+                              <a href={project.linkApps} target="_blank" rel="noopener noreferrer">
+                                <Smartphone className="mr-2 h-3 w-3" />
+                                Apps
+                              </a>
+                            </Button>
+                          )}
+                          {project.linkProject && (
+                            <Button size="sm" variant="outline" asChild className="w-full border-primary/30">
+                              <a href={project.linkProject} target="_blank" rel="noopener noreferrer">
+                                <Github className="mr-2 h-3 w-3" />
+                                Repository
+                              </a>
+                            </Button>
+                          )}
+                        </div>
                       )}
                     </CardContent>
                   </Card>

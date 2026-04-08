@@ -7,7 +7,8 @@ export const personalInfo = {
   github: "pipigendut",
   linkedin: "akabarem",
   website: "pipigendut.space",
-  summary: "Fullstack Developer with 7+ years of experience specializing in scalable web systems, backend services, and API-driven architectures. Experienced in frontend development, deployment pipelines, and maintaining high-traffic production systems. Comfortable working independently or as part of a collaborative engineering team."
+  summary: "Just a developer who likes to learn new things.",
+  about: "Fullstack Developer with 7+ years of experience specializing in scalable web systems, backend services, and API-driven architectures. Experienced in frontend development, deployment pipelines, and maintaining high-traffic production systems. Comfortable working independently or as part of a collaborative engineering team."
 };
 
 export const skills = {
@@ -38,7 +39,8 @@ export const skills = {
     "ElasticSearch",
     "Git",
     "Nginx",
-    "AWS EC2"
+    "AWS EC2",
+    "DBeaver"
   ],
   architecture: [
     "Microservices",
@@ -87,7 +89,8 @@ export const projects = [
       "https://lh3.googleusercontent.com/d/1ZZKoqxUEHqvZHGIeE_2ZIX2HZXEYf9ej",
       "https://lh3.googleusercontent.com/d/1m1CUvB_1SLxWfZwjrU-Db5rbWeqZ8-4m"
     ],
-    link: "https://example.com/swipee"
+    linkWeb: "https://api.swipee.pipigendut.space/swagger/index.html",
+    linkApps: "https://drive.google.com/file/d/1BpWxB5CCrlKRWmmyWJ8SIXTlYNmTssPP/view?usp=sharing"
   },
   {
     id: 2,
@@ -128,7 +131,7 @@ export const projects = [
       "https://lh3.googleusercontent.com/d/17ZvFReM9411OD6kbL1Dnk5DB3mp0TCZb",
       "https://lh3.googleusercontent.com/d/1YQTY5qM0duudSqx-13IXHLGmRII5fygu"
     ],
-    link: "https://www.jiff.com.my/index.html",
+    linkWeb: "https://www.jiff.com.my/index.html",
     experienceId: 1
   },
   {
@@ -160,7 +163,7 @@ export const projects = [
       "https://lh3.googleusercontent.com/d/13hT9ebDlygIrN_K84OKOffSlSLS_uaRq",
       "https://lh3.googleusercontent.com/d/1UL-NG1AZLW8l9JkZib8Zib0yJIH8FVrO"
     ],
-    link: "https://app.koskinspecialist.com",
+    linkWeb: "https://app.koskinspecialist.com",
     experienceId: 1
   },
   {
@@ -193,7 +196,7 @@ export const projects = [
       "https://lh3.googleusercontent.com/d/1c12dqiHFixX5J8afrQj-I6NVTKdwuZyj",
       "https://lh3.googleusercontent.com/d/1SkmYUelS6AqpWXtzHPWO-BSSQiJNtf0a"
     ],
-    link: "https://ninjasuites.ai/",
+    linkWeb: "https://ninjasuites.ai/",
     experienceId: 1
   },
   {
@@ -222,7 +225,8 @@ export const projects = [
       "https://lh3.googleusercontent.com/d/1j_wUjHyCl7W4pikYxOK-TCfax9eKjRRb",
       "https://lh3.googleusercontent.com/d/1517KgJr2GNtA709WRh8wGScWa68YSmCb"
     ],
-    link: "https://play.google.com/store/apps/details?id=com.goldenenergymines.dots"
+    linkApps: "https://play.google.com/store/apps/details?id=com.goldenenergymines.dots",
+    linkWeb: "https://isafesumatera.ugems.id/"
   },
   {
     id: 6,
@@ -244,7 +248,7 @@ export const projects = [
       "https://lh3.googleusercontent.com/d/1ekWmYJ1f9qAaTVgZFkejOXujOKHbbFLi",
       "https://lh3.googleusercontent.com/d/1m3_iqokx2E7QHo6jaex8fxMSIEAJyH0b"
     ],
-    link: "https://fams.borneo-indobara.com"
+    linkWeb: "https://fams.borneo-indobara.com"
   },
   {
     id: 7,
@@ -263,7 +267,7 @@ export const projects = [
     ],
     deployment: "CI/CD Jenkins",
     images: [],
-    link: ""
+    linkWeb: ""
   },
   {
     id: 9,
@@ -302,7 +306,7 @@ export const projects = [
       "https://lh3.googleusercontent.com/d/1iQbYnjdrvt7PslWkZRUhPzlPiVYhEuxD",
       "https://lh3.googleusercontent.com/d/1YmSv26mfECdRUXNt5x3b9hxraprkAt8P"
     ],
-    link: "https://www.alodokter.com/",
+    linkWeb: "https://www.alodokter.com/",
     experienceId: 2
   },
   {
@@ -332,7 +336,7 @@ export const projects = [
     images: [
       "https://lh3.googleusercontent.com/d/1IsKDVkqmEVWvqjGmgx0-WW51hR-R3uz0"
     ],
-    link: "https://pos.kimiafarma.co.id/",
+    linkWeb: "https://pos.kimiafarma.co.id/",
     experienceId: 3
   }
 ];
